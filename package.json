@@ -1,0 +1,28 @@
+{
+    "name": "web",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "gray-matter": "^4.0.2",
+        "next": "10.0.7",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "remark": "^13.0.0",
+        "remark-html": "^13.0.1"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss7-compat": "^2.0.3",
+        "@types/node": "^14.14.31",
+        "@types/react": "^17.0.2",
+        "@types/react-dom": "^17.0.1",
+        "autoprefixer": "^9",
+        "postcss": "^7",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+        "typescript": "^4.2.2"
+    }
+}
