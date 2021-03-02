@@ -7,9 +7,11 @@ html {
     height: 100%;
 
     --accent: #2dceff;
+    --soft-accent: #00b6ee;
     --discord: #7289da;
-    --light: #fafafa;
+    --light: #fcfcfc;
     --dark: #111111;
+    --text: #162933;
 
     --sans: "Source Sans Pro", sans-serif;
 
@@ -19,6 +21,8 @@ html {
 }
 
 body {
+    color: var(--text);
+
     height: 100%;
 }
 
@@ -46,11 +50,19 @@ body {
 }
 
 .nav-open {
-    transform: translateX(0%);
+    transform: translateX(0);
 }
 
 .hamburger > div {
     height: 0.125rem;
+}
+
+a.link {
+    color: var(--soft-accent);
+}
+
+a.link:hover {
+    text-decoration: underline;
 }
 
 @media (min-width: 660px) {

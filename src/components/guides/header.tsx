@@ -1,7 +1,15 @@
 import { debounce } from "lodash";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
-export default function Header({ open, setOpen }: { open: boolean; setOpen: Dispatch<SetStateAction<boolean>> }) {
+export default function Header({
+    open,
+    setOpen,
+    title,
+}: {
+    open: boolean;
+    setOpen: Dispatch<SetStateAction<boolean>>;
+    title: string;
+}) {
     const [width, setWidth] = useState(2048);
 
     useEffect(() => {
@@ -37,7 +45,7 @@ export default function Header({ open, setOpen }: { open: boolean; setOpen: Disp
                     </h3>
                 </a>
                 <a href="/discord.js">
-                    <h3 className="text-2xl sans font-light">discord.js</h3>
+                    <h3 className="text-2xl sans font-light">{title}</h3>
                 </a>
             </div>
         </header>

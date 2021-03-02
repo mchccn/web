@@ -1,12 +1,12 @@
 import Layout from "../components/layout";
 
-export default function Index() {
+export default function Guides() {
     return (
         <Layout>
             <div>
-                fucking nothing here, visit our{" "}
-                <a href="/guides" className="link">
-                    guides
+                also fucking nothing, visit our{" "}
+                <a href="/guides/discord.js" className="link">
+                    discord.js guide
                 </a>{" "}
                 instead.
             </div>
