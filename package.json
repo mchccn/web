@@ -8,7 +8,6 @@
         "start": "next start"
     },
     "dependencies": {
-        "@types/lodash": "^4.14.168",
         "gray-matter": "^4.0.2",
         "next": "10.0.7",
         "react": "17.0.1",
@@ -17,6 +16,7 @@
         "remark-html": "^13.0.1"
     },
     "devDependencies": {
+        "@types/lodash": "^4.14.168",
         "@tailwindcss/postcss7-compat": "^2.0.3",
         "@types/node": "^14.14.31",
         "@types/react": "^17.0.2",
