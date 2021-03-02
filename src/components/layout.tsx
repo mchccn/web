@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-interface ILayoutProps {
+export interface ILayoutProps {
     children: React.ReactNode;
     title?: string;
 }
@@ -27,6 +27,7 @@ export default function Layout({ children, title }: ILayoutProps) {
                 <meta property="og:image" content="" />
                 <title>{title ? `Nova | ${title}` : "Nova"}</title>
                 <link rel="icon" href="/fav.jpg" />
+                <link rel="preload" href="/fonts/cocomat.ttf" as="font" crossOrigin="" />
             </Head>
             <div className="app">{children}</div>
         </div>

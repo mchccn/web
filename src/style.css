@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+
+    --accent: #2dceff;
+    --discord: #7289da;
+    --light: #fafafa;
+    --dark: #111111;
+
+    --sans: "Source Sans Pro", sans-serif;
+
+    overflow-x: hidden;
+
+    overscroll-behavior: none;
+}
+
+body {
+    height: 100%;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.sans {
+    font-family: var(--sans);
+}
+
+.cocomat-title {
+    text-transform: uppercase;
+    font-family: "Cocomat";
+}
+
+.sidebar {
+    height: calc(100vh - 64px);
+
+    position: fixed;
+
+    transform: translateX(-100%);
+
+    transition: 0.2s transform ease;
+}
+
+.nav-open {
+    transform: translateX(0%);
+}
+
+.hamburger > div {
+    height: 0.125rem;
+}
+
+@media (min-width: 660px) {
+    .sidebar {
+        position: static;
+
+        transform: translateX(0);
+    }
+}
