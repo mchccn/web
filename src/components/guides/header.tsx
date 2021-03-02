@@ -5,10 +5,12 @@ export default function Header({
     open,
     setOpen,
     title,
+    home,
 }: {
     open: boolean;
     setOpen: Dispatch<SetStateAction<boolean>>;
     title: string;
+    home: string;
 }) {
     const [width, setWidth] = useState(2048);
 
@@ -44,7 +46,7 @@ export default function Header({
                         N<span className="text-accent">o</span>va
                     </h3>
                 </a>
-                <a href="/discord.js">
+                <a href={`/guides/${home}`}>
                     <h3 className="text-2xl sans font-light">{title}</h3>
                 </a>
             </div>

@@ -13,7 +13,7 @@ export default function DiscordJS({ allGuidesData }: IDiscordJSProps) {
     return (
         <Layout title="discord.js">
             <div className="flex flex-col h-screen">
-                <Header open={navOpen} setOpen={setNavOpen} title={"discord.js"} />
+                <Header open={navOpen} setOpen={setNavOpen} title={"discord.js"} home={"discord.js"} />
                 <div className="flex flex-row flex-1">
                     <Sidebar guides={allGuidesData} open={navOpen} namespace={"discord.js"} />
                     <div className="flex-1 p-4 bg-light">fucking nothing with a little something.</div>
