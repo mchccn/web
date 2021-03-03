@@ -101,6 +101,10 @@ a.link:hover {
     width: 384px;
 }
 
+.guides {
+    width: 400px;
+}
+
 @media (min-width: 660px) {
     .sidebar {
         position: static;
@@ -113,10 +117,25 @@ a.link:hover {
     .footer > div {
         width: 450px;
     }
+
+    .guides {
+        width: 500px;
+    }
 }
 
 @media (min-width: 1024px) {
     .footer > div {
         width: 500px;
+    }
+
+    .guides {
+        width: 600px;
+    }
+}
+
+@layer utilities {
+    .text-gradient {
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
