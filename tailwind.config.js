@@ -9,6 +9,8 @@ module.exports = {
                 discord: "var(--discord)",
                 light: "var(--light)",
                 dark: "var(--dark)",
+                lighterDark: "var(--lighter-dark)",
+                darkerLight: "var(--darker-light)",
             },
         },
     },

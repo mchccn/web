@@ -11,12 +11,15 @@ html {
     --discord: #7289da;
     --light: #fcfcfc;
     --dark: #111111;
+    --lighter-dark: #23272a;
+    --darker-light: #dddddd;
     --text: #162933;
 
     --sans: "Source Sans Pro", sans-serif;
 
     overflow-x: hidden;
 
+    -ms-scroll-chaining: none;
     overscroll-behavior: none;
 }
 
@@ -28,6 +31,9 @@ body {
 
 .app {
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .sans {
@@ -44,9 +50,15 @@ body {
 
     position: fixed;
 
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
 
+    -webkit-transition: 0.2s -webkit-transform ease;
+    transition: 0.2s -webkit-transform ease;
+    -o-transition: 0.2s transform ease;
     transition: 0.2s transform ease;
+    transition: 0.2s transform ease, 0.2s -webkit-transform ease;
 }
 
 .guide-container {
@@ -56,6 +68,8 @@ body {
 }
 
 .nav-open {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
 }
 
@@ -71,10 +85,38 @@ a.link:hover {
     text-decoration: underline;
 }
 
+.not-found {
+    height: calc(100vh - 64px);
+}
+
+.app > div.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.footer > div {
+    width: 384px;
+}
+
 @media (min-width: 660px) {
     .sidebar {
         position: static;
 
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
         transform: translateX(0);
+    }
+
+    .footer > div {
+        width: 450px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer > div {
+        width: 500px;
     }
 }
