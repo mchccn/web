@@ -1,5 +1,6 @@
+import hljs from "highlight.js";
 import { GetStaticPropsContext } from "next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../../components/guides/header";
 import Sidebar from "../../../components/guides/sidebar";
 import Layout from "../../../components/layout";
@@ -11,18 +12,30 @@ export interface IDiscordJSIdProps extends IGuideIdProps {}
 export default function DiscordJS({ allGuidesData, guideData }: IDiscordJSIdProps) {
     const [navOpen, setNavOpen] = useState(false);
 
+    useEffect(() => {
+        hljs.configure({
+            languages: ["typescript", "javascript", "html", "css"],
+        });
+
+        document.querySelectorAll(".guide pre code").forEach((block) => {
+            hljs.highlightBlock(block as HTMLElement);
+        });
+    }, []);
+
     return (
         <Layout title={`discord.js – ${guideData.title}`}>
             <div className="flex flex-col h-screen">
                 <Header open={navOpen} setOpen={setNavOpen} title={"discord.js"} home={"discord.js"} />
                 <div className="flex flex-row flex-1">
                     <Sidebar guides={allGuidesData} open={navOpen} namespace={"discord.js"} active={guideData.id} />
-                    <div
-                        className="flex-1 p-4 bg-light guide"
-                        dangerouslySetInnerHTML={{
-                            __html: guideData.htmlContent,
-                        }}
-                    ></div>
+                    <div className="flex-1 p-4 bg-light guide-container">
+                        <div
+                            className="guide"
+                            dangerouslySetInnerHTML={{
+                                __html: guideData.htmlContent,
+                            }}
+                        ></div>
+                    </div>
                 </div>
             </div>
         </Layout>

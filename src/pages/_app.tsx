@@ -1,6 +1,8 @@
+import "highlight.js/styles/stackoverflow-light.css";
 import { AppProps } from "next/app";
 import React from "react";
 import "tailwindcss/tailwind.css";
+import "../styles/markdown.css";
 import "../styles/style.css";
 
 function App({ Component, pageProps }: AppProps) {

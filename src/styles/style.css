@@ -49,6 +49,12 @@ body {
     transition: 0.2s transform ease;
 }
 
+.guide-container {
+    max-height: calc(100vh - 64px);
+
+    overflow: scroll;
+}
+
 .nav-open {
     transform: translateX(0);
 }
