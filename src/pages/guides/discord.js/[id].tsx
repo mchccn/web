@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import hljs from "highlight.js";
 import { GetStaticPropsContext } from "next";
 import { useEffect, useState } from "react";
@@ -30,11 +31,18 @@ export default function DiscordJS({ allGuidesData, guideData }: IDiscordJSIdProp
                     <Sidebar guides={allGuidesData} open={navOpen} namespace={"discord.js"} active={guideData.id} />
                     <div className="flex-1 py-4 px-6 bg-light guide-container">
                         <div
-                            className="guide pb-16"
+                            className="guide"
                             dangerouslySetInnerHTML={{
                                 __html: guideData.htmlContent,
                             }}
                         ></div>
+                        <hr className="guide mt-4 mb-2" />
+                        <div className="guide flex justify-between">
+                            <p className="text-xs">
+                                <a href={`https://www.github.com/${guideData.author}`}>{guideData.author}</a>
+                            </p>
+                            <p className="text-xs text-gray-500">{format(new Date(guideData.updatedAt), "MMMM dd, yyyy")}</p>
+                        </div>
                     </div>
                 </div>
             </div>

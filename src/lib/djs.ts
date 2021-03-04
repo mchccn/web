@@ -30,7 +30,7 @@ export function getGuidesData() {
         };
     });
 
-    const categories = ["welcome", "aeroclient"];
+    const categories = ["welcome", "getting started", "aeroclient"];
 
     //@ts-ignore
     const categorySort = allGuidesData.sort(
