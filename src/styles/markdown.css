@@ -1,5 +1,6 @@
 .guide {
-    max-width: 800px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .guide h1 {
@@ -64,7 +65,7 @@
     margin: 0.25rem;
 }
 
-.guide code {
+.guide > code {
     font-size: 0.85rem;
     background: #eee;
     padding: 0.25rem 0.35rem;
@@ -80,7 +81,13 @@
 }
 
 .guide pre code {
-    padding: 0.5rem;
+    padding: 0.75rem 1rem;
+
+    border-radius: 4px;
 
     width: 100%;
+}
+
+.guide img {
+    max-height: 400px;
 }
