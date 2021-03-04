@@ -27,6 +27,10 @@ For our purposes, we'll be using Node v14.x and Discord.js v12. It is fine to us
 
 If you haven't got Node installed, please do so [here](https://nodejs.org/en/).
 
+## Discord.js 
+[discord.js](https://www.npmjs.com/package/discord.js) is what we will be using to make calls to Discords API and get a functioning bot. below use the same process for discord.js as we do for nodemon
+
+
 ## Nodemon
 
 [nodemon](https://www.npmjs.com/package/nodemon) is a package we're going to use to speed up the development process. It will restart the bot every time we make changes, so we won't have to stop and restart the bot ourselves.
