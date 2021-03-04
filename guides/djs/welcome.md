@@ -42,7 +42,7 @@ npm i -g nodemon
 Using [yarn](https://yarnpkg.com/):
 
 ```
-yarn global add nodemon
+yarn glo​bal add nodemon
 ```
 
 ### Usage

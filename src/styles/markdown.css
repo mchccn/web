@@ -27,7 +27,16 @@
 }
 
 .guide p {
+    margin: 0.5rem 0;
     font-size: 1rem;
+}
+
+.guide a {
+    color: var(--soft-accent);
+}
+
+.guide a:hover {
+    text-decoration: underline;
 }
 
 .guide :is(ul, ol) {
