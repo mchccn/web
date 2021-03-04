@@ -18,6 +18,13 @@ npm init -y
 npm install discord.js
 ```
 
+Or if you use [yarn](https://yarnpkg.com):
+
+```
+yarn init -y
+yarn add discord.js
+```
+
 Optionally, you can also initialize and sync up your code with git, remember to ignore the `node_modules` folder and the `.env` file if you have one (use GitHub's Node.js `.gitignore` template).
 
 Your directory will now contain new files: `package.json`, `package-lock.json`, and a `node_modules` folder.
