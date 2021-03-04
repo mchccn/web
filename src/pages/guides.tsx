@@ -16,12 +16,13 @@ export default function Guides() {
                         projects!
                     </p>
                     <a href="/guides/discord.js">
-                        <div className="border border-text p-2 rounded-sm shadow-md hover:shadow-lg transition-shadow">
+                        <div className="border border-text p-4 rounded-sm shadow-md hover:shadow-lg transition-shadow">
                             <h3 className="text-xl font-mono my-1 font-thin lg:text-2xl">discord.js</h3>
-                            <p className="text-sm lg:text-base">
+                            <p className="text-sm lg:text-base my-2">
                                 Set up your environment and start developing Discord bots! Covers basic command handling,
-                                arguments, and Discord API. Prerequisites: JavaScript.
+                                arguments, and Discord API.
                             </p>
+                            <p className="text-xs text-lighterDark mt-2">Prerequisites: JavaScript.</p>
                         </div>
                     </a>
                 </div>

@@ -14,7 +14,7 @@ export default function DiscordJS({ allGuidesData, guideData }: IDiscordJSIdProp
 
     useEffect(() => {
         hljs.configure({
-            languages: ["typescript", "javascript", "html", "css"],
+            languages: ["typescript"],
         });
 
         document.querySelectorAll(".guide pre code").forEach((block) => {
@@ -28,7 +28,7 @@ export default function DiscordJS({ allGuidesData, guideData }: IDiscordJSIdProp
                 <Header open={navOpen} setOpen={setNavOpen} title={"discord.js"} home={"discord.js"} />
                 <div className="flex flex-row flex-1">
                     <Sidebar guides={allGuidesData} open={navOpen} namespace={"discord.js"} active={guideData.id} />
-                    <div className="flex-1 p-4 bg-light guide-container">
+                    <div className="flex-1 py-4 px-6 bg-light guide-container">
                         <div
                             className="guide"
                             dangerouslySetInnerHTML={{

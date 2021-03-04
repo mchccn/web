@@ -105,6 +105,10 @@ a.link:hover {
     width: 400px;
 }
 
+.banner {
+    height: 375px;
+}
+
 @media (min-width: 660px) {
     .sidebar {
         position: static;
@@ -121,6 +125,10 @@ a.link:hover {
     .guides {
         width: 500px;
     }
+
+    .banner {
+        height: 400px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -130,6 +138,22 @@ a.link:hover {
 
     .guides {
         width: 600px;
+    }
+
+    .banner {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .banner {
+        height: 500px;
+    }
+}
+
+@media (min-width: 1535px) {
+    .banner {
+        height: 525px;
     }
 }
 
