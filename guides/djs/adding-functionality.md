@@ -2,6 +2,8 @@
 title: Adding Functionality to your bot
 index: 0
 category: getting-started
+author: dheerajpv
+updatedAt: 3/4/2021
 ---
 
 # Adding functionality to your new bot
