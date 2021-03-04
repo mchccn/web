@@ -34,7 +34,7 @@ export default function DiscordJS({ allGuidesData, guideData }: IDiscordJSIdProp
                             dangerouslySetInnerHTML={{
                                 __html: guideData.htmlContent,
                             }}
-                        ></div>
+                        />
                     </div>
                 </div>
             </div>
