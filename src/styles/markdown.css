@@ -1,5 +1,6 @@
 .guide {
-    max-width: 800px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .guide h1 {
@@ -85,4 +86,8 @@
     border-radius: 4px;
 
     width: 100%;
+}
+
+.guide img {
+    max-height: 400px;
 }

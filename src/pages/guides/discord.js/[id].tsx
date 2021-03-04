@@ -15,7 +15,7 @@ export default function DiscordJS({ allGuidesData, guideData }: IDiscordJSIdProp
 
     useEffect(() => {
         hljs.configure({
-            languages: ["typescript"],
+            languages: ["typescript", "diff"],
         });
 
         document.querySelectorAll(".guide pre code").forEach((block) => {
