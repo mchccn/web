@@ -30,10 +30,12 @@ export function getGuidesData() {
         };
     });
 
-    const categories = ["welcome", "getting-started"];
+    const categories = ["welcome", "aeroclient"];
 
     //@ts-ignore
-    const categorySort = allGuidesData.sort((a, b) => categories.indexOf(a.category) - categories.indexOf(b.category));
+    const categorySort = allGuidesData.sort(
+        (a, b) => categories.indexOf(a.category.toLowerCase()) - categories.indexOf(b.category.toLowerCase())
+    );
 
     //@ts-ignore
     return categorySort

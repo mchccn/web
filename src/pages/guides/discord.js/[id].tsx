@@ -30,7 +30,7 @@ export default function DiscordJS({ allGuidesData, guideData }: IDiscordJSIdProp
                     <Sidebar guides={allGuidesData} open={navOpen} namespace={"discord.js"} active={guideData.id} />
                     <div className="flex-1 py-4 px-6 bg-light guide-container">
                         <div
-                            className="guide"
+                            className="guide pb-16"
                             dangerouslySetInnerHTML={{
                                 __html: guideData.htmlContent,
                             }}

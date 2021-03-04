@@ -23,7 +23,13 @@ export default function DiscordJS({ allGuidesData }: IDiscordJSProps) {
                             </h3>
                             <h4 className="text-2xl font-light">discord.js guide</h4>
                         </div>
-                        <p className="my-2">This is the official Nova guide. Click on 'Welcome' to get started!</p>
+                        <p className="my-2">
+                            This is the official Nova guide. Click on{" "}
+                            <a href="/guides/discord.js/welcome" className="link">
+                                here
+                            </a>{" "}
+                            to get started!
+                        </p>
                     </div>
                 </div>
             </div>
