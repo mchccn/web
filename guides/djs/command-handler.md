@@ -25,7 +25,7 @@ const fs = require('fs')
 
 client.commands = new Collection();
 
-fs.readdirSync('./src/commands/').forEach(dir => {
+fs.readdirSync('./commands/').forEach(dir => {
         const commands = fs.readdirSync(`./commands/${dir}/`).filter(file => file.endsWith('.js'));
         for (let file of commands) {
             let pull = require(`./commands/${dir}/${file}`);
