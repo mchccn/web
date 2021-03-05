@@ -65,7 +65,14 @@
     margin: 0.25rem;
 }
 
-.guide > code {
+.guide > code,
+.guide p code,
+.guide h1 code,
+.guide h2 code,
+.guide h3 code,
+.guide h4 code,
+.guide h5 code,
+.guide h6 code {
     font-size: 0.85rem;
     background: #eee;
     padding: 0.25rem 0.35rem;
