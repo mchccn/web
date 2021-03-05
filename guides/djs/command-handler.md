@@ -2,7 +2,7 @@
 title: Command Handler
 index: 5
 category: Command Handler
-auhtor: dheerajpv
+auhtor: dheerajpv, CashoutJohnny
 updatedAt: 3/5/2021
 ---
 
