@@ -19,17 +19,21 @@ In Your Main File, You will want to add what’s in the box below.
 If you’re not using a .env file to log in use `client.login(config.token)` or `client.login(token)`.
 
 ```js
-const Discord = require("discord.js");
-const client = new Discord.Client();
+const { Client } = require("discord.js");
+const client = new Client();
 const fs = require('fs')
 
-client.commands = new Discord.Collection();
+client.commands = new Collection();
 
-const commandFiles = fs.readdirSync(`./commands/${dir}/`).filter(file => file.endsWith('.js'));
-for (const file of commandFiles) {
-    const command = require(`./commands/${dir}/${file}`);
-    client.commands.set(command.name, command);
-}
+fs.readdirSync('./src/commands/').forEach(dir => {
+        const commands = fs.readdirSync(`./commands/${dir}/`).filter(file => file.endsWith('.js'));
+        for (let file of commands) {
+            let pull = require(`./commands/${dir}/${file}`);
+            if (pull.name) {
+                client.commands.set(pull.name, pull);
+            } 
+        }
+    });
 
 
 client.login(process.env.TOKEN)
