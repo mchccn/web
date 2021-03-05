@@ -19,7 +19,7 @@ In Your Main File, You will want to add what’s in the box below.
 If you’re not using a .env file to log in use `client.login(config.token)` or `client.login(token)`.
 
 ```js
-const { Client } = require("discord.js");
+const { Client, Collection } = require("discord.js");
 const client = new Client();
 const fs = require('fs')
 
