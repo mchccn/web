@@ -18,6 +18,14 @@ export default function Index() {
                         </p>
                     </div>
                 </div>
+                <div className="h-96 grid place-items-center">
+                    <div className="flex flex-col justify-between">
+                        <div>
+                            <p></p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
             <Footer />
         </Layout>
