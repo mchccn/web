@@ -12,6 +12,8 @@ In the last article, we made a super simple command handler that really doesnt d
 It has no bells and whistles and only runs with the exact command name.
 In this article, we will make a much better handler that can have multiple command names (aliases) and can even generate a default help menu.
 
+---
+
 ## Getting Started
 
 In your `index.js` file, you should have this code. This code will be explained below.
@@ -47,7 +49,7 @@ async function traverseDir(dir) {
 
 client.login(process.env.TOKEN);
 ```
-
+---
 The top 5 lines are simply boilerplate code, as we need to import all the libraries and create a client.
 However, things get interesting after that.
 We add a `commands` property to the client we instatiated as a new emtpty `Collection`.
@@ -57,10 +59,12 @@ Learn more about `async/await` [here](https://developer.mozilla.org/en-US/docs/W
 
 Then we log in as usual.
 
+---
 ## Responding to commands
 
 What we did above only _loads_ the commands and does not respond to them, as can be evidenced by it not having a message listener.
 To make the bot actually responf to them, we need to listen to the `message` event and check for commands. This can be done as follows.
+
 
 ```js
 client.on("message" (message) => {
@@ -105,6 +109,8 @@ What the code above does is the following:
 4. Finds the command from the `client.commands` collection
 5. Tries to run the command's callback function
 6. Should it throw an error, it sends a message indicating that to the user
+
+---
 
 ## Making a Command
 
